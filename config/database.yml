@@ -85,4 +85,4 @@ production:
   database: spree_production
   username: spree
   password: <%= ENV['SPREE_DATABASE_PASSWORD'] %>
-  
+  url: <%= ENV['DATABASE_URL'] %>

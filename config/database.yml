@@ -83,10 +83,13 @@ development:
 production:
 #  <<: *default
   adapter: postgresql
+  encoding: utf8
+  reconnect: false
   database: spree_production
   pool: 5
   username: spree
   password: password
   host: localhost
 secret_key_base: <%= ENV["SECRET_KEY_BASE"] %>
+# port: 8889
 #  password: <%= ENV['SPREE_DATABASE_PASSWORD'] %>
